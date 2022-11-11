@@ -34,6 +34,8 @@ class HomeView extends StatelessWidget {
                 ),
               ),
             ),
+            const Divider(color: Colors.transparent),
+            Text(controller.ticket),
           ],
         ),
       ),
