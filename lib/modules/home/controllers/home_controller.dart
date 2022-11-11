@@ -1,7 +1,7 @@
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 
 class HomeController {
-  late String ticket;
+  String ticket = '';
 
   Future<Object> readQRCode() async {
     try {
