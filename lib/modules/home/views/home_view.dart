@@ -22,19 +22,11 @@ class HomeView extends StatelessWidget {
               child: SizedBox(
                 height: 50,
                 width: 250,
-                child: ElevatedButton(
+                child: ElevatedButton.icon(
                   onPressed: () {},
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
-                      Icon(Icons.qr_code),
-                      Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text(
-                          'Validar QR Code',
-                        ),
-                      ),
-                    ],
+                  icon: const Icon(Icons.qr_code),
+                  label: const Text(
+                    'Validar QR Code',
                   ),
                 ),
               ),
