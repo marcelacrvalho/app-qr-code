@@ -1,3 +1,4 @@
+import 'package:app_qr_code/modules/home/controllers/home_controller.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -11,6 +12,8 @@ class HomeView extends StatelessWidget {
   }
 
   Widget _body() {
+    HomeController controller = HomeController();
+
     return SafeArea(
       child: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -23,7 +26,7 @@ class HomeView extends StatelessWidget {
                 height: 50,
                 width: 250,
                 child: ElevatedButton.icon(
-                  onPressed: () {},
+                  onPressed: controller.readQRCode,
                   icon: const Icon(Icons.qr_code),
                   label: const Text(
                     'Validar QR Code',
